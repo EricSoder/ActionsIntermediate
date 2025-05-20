@@ -5,6 +5,7 @@ on:
 jobs:
   matrix-job:
     strategy:
+      max-parallel: 2
       matrix:
         os: [windows-latest, ubuntu-latest]
         node: [14, 16]
